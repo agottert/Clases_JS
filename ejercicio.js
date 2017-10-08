@@ -1,4 +1,4 @@
-var m=prompt("Escriba el nombre del mes en minuscula");
+var m =prompt("Escriba el nombre del mes en minuscula");
 var dias31= " Tiene 31 días";
 var dias30= " Tiene 30 días";
 var dias28= " Tiene 28 días";
