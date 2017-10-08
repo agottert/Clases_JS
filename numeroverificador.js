@@ -1,22 +1,22 @@
-var numero="450995356623370";
-var esSegundoDigito= true;
+var number="450995356623370";
+var isSecondDigit= true;
 var total=0;
-console.log(numero);
-var verificador=0;
+console.log(number);
+var verifynumber=0;
 
 for(var i = numero.length - 1; i >= 0 ; i--){
 	var x= parseInt(numero.charAt(i));
-		if (esSegundoDigito==true){
+		if (isSecondDigit==true){
 			x=x*2;
 		  if (x>9) {
 			x-=9;
 		}
 		total+=x;
-	    esSegundoDigito=false;
+	    isSecondDigit=false;
 	}
 	else {
-		total+=parseInt(numero.charAt(i));
-		esSegundoDigito=true;
+		total+=parseInt(number.charAt(i));
+		isSecondDigit=true;
 			
 	}
 }
@@ -24,8 +24,8 @@ for(var i = numero.length - 1; i >= 0 ; i--){
 /*var suma=0;*/
 console.log("El total es: "+total);
 
-verificador= 10-(total%10);
-console.log(verificador);
+verifynumber= 10-(total%10);
+console.log(verifynumber);
 
 /*suma= total/10;
 console.log(suma);

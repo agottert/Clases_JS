@@ -1,26 +1,26 @@
-var numero="4509953566233704";
-var esSegundoDigito= false;
+var number="4509953566233704";
+var isSecondDigit= false;
 var total=0;
-console.log(numero);
+console.log(number);
 
-for(var i = numero.length - 1; i >= 0 ; i--){
-	var x= parseInt(numero.charAt(i));
-		if (esSegundoDigito==true){
+for(var i = number.length - 1; i >= 0 ; i--){
+	var x= parseInt(number.charAt(i));
+		if (isSecondDigit==true){
 			x=x*2;
 		  if (x>9) {
 			x-=9;
 		}
 		total+=x;
-	    esSegundoDigito=false;
+	    isSecondDigit=false;
 	}
 	else {
-		total+=parseInt(numero.charAt(i));
-		esSegundoDigito=true;
+		total+=parseInt(number.charAt(i));
+		isSecondDigit=true;
 		
 	}
 }
 
-console.log("El total es: "+total);
+console.log("The total is: "+total);
 
 
 // operador Ternario 
@@ -28,10 +28,10 @@ console.log("El total es: "+total);
 
 // Normalmente sería 
 if (total%10===0){
-	alert("Bien ahi");
+	alert("Correct number");
 }
 else {
-	alert("Mal ahi");
+	alert("Incorrect number");
 }
 
 
