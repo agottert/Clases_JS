@@ -10,7 +10,7 @@ The Luhn algorithm or Luhn formula, also known as the "modulus 10" or "mod 10" a
 
 ### What did I do?
 The challenge was apply Luhn algorithm in JS without using arrays. 
-We found many ways to reach that task. This one is one o them:
+We found many ways to reach that task. This one is one o them: [Luhn excercise](Luhn.js)
 
 ```
 var numero="4509953566233704";
@@ -57,6 +57,7 @@ if (isSecondDigit==true){
 ### Next challenge was to know what is the verifynumber. 
 So instead of having 16 number we start with 15. The most part of code is similar to the othe other one. What did I change? The way I initialized that variable:
 `var esSegundoDigito= true;`
+[Verify number excercise](numeroverificador.js)
  
 ##### Math tricks: As you the Luhn algorithm say, the total must be modulo 10 equal 0. 
 The function modulo is "a%b=c". So with the verify number it must be "a%10=0". But we don't have it. 
