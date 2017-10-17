@@ -4,8 +4,8 @@ var total=0;
 console.log(number);
 var verifynumber=0;
 
-for(var i = numero.length - 1; i >= 0 ; i--){
-	var x= parseInt(numero.charAt(i));
+for(var i = number.length - 1; i >= 0 ; i--){
+	var x= parseInt(number.charAt(i));
 		if (isSecondDigit==true){
 			x=x*2;
 		  if (x>9) {
