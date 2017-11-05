@@ -1,13 +1,13 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Ejercicio con js</title>
-	<script type="text/javascript" src="disfraces.js"></script>
+	<title>Formulario</title>
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<script type="text/javascript" src="js/botones.js"></script> 
 </head>
 <body>
+	<div class="container">
 	<form>
   <div class="form-group">
     <label for="exampleInputEmail1">Email address</label>
@@ -27,8 +27,16 @@
       <input type="checkbox"> Check me out
     </label>
   </div>
-  <button type="submit" class="btn btn-default">Submit</button>
+  <button type="submit" class="btn btn-default" onclick="validar('contra')">Submit</button>
 </form>
+
+<p id ='test'> Texto</p>
+<button onclick="changeColor('blue');">azul</button>
+<button onclick="changeColor('red');">red</button>
+
+
+</div>
+
 
 
 	

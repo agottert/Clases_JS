@@ -38,3 +38,6 @@ var nuevoupper= upper.map(function(e){
 });
 console.log(nuevoupper);
 
+var array =[10,4,5,90,11,11,34,8,2,2,7,0]; //devolver un array nuevo que no contenga los repetidos
+
+//ver repetidos.js
