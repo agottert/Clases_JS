@@ -1,0 +1,17 @@
+.errores{
+	
+	display: none;
+	margin-left: 300px;
+	margin-top: -20px;
+	position:absolute;
+
+
+}
+
+#miFormulario{
+	margin-left: 530px;
+}
+
+.campo{
+	margin-top: 50px;
+}

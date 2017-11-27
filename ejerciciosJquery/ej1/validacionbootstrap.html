@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Formulario con Bootstrap</title>
+	<link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="validacionbootstrap.css">
+
+
+</head>
+<body>
+
+	 <div class="container">
+      <form>
+        <div class="row">
+            <div class="col-md-6 col-sm-12 col-xs-12 datos">
+            	<div class="form-group has-feedback">
+                <input id ="texto" type="text" class="form-control" placeholder="Nombre" >
+                <span id='iconotexto' class='glyphicon glyphicon-remove form-control-feedback'> </span>
+                <span class="help-block"></span>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-12 col-xs-12 datos">
+            	<div class="form-group has-feedback">
+                <input type="text" class="form-control" placeholder="Telefono" id="numero">
+                <span id='icononumero' class='glyphicon glyphicon-remove form-control-feedback'> </span>
+                <span class="help-block"></span>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-sm-12 col-xs-12 datos">
+            	<div class="form-group has-feedback">
+                <input type="text" class="form-control" placeholder="ejemplo@ejemplo" id="mail">
+                <span id='iconomail' class='glyphicon glyphicon-remove form-control-feedback'> </span>
+                <span class="help-block"></span>
+
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-12 col-xs-12 datos">
+                <input type="text" class="form-control" placeholder="Localidad">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 datos">
+            	<div class="form-group has-feedback">
+                <input type="text" class="form-control" placeholder="Asunto" id="asunto">
+                <span id='iconoasunto' class='glyphicon glyphicon-remove form-control-feedback'> </span>
+                <span class="help-block"></span>
+
+              </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 datos">
+            	<div class="form-group has-feedback">
+
+                <textarea class="form-control caja" placeholder= "Escriba su mensaje..." id="mensaje"></textarea>
+                <span id='iconomensaje' class='glyphicon glyphicon-remove form-control-feedback'> </span>
+                <span class="help-block"></span>
+              </div>
+            </div>
+        </div>
+        
+        
+            
+        
+        <div class="boton">
+            <button type="reset" class="btn btn-secondary" id="btborrar">Borrar</button>
+            <button type="submit" class="btn btn-secondary" id="btnvalidar">Enviar</button>
+        </div>
+    </form>
+	</div>
+
+
+	<script type="text/javascript" src="../jquery/jquery.min.js"></script>
+	<script type="text/javascript" src="../bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="validacionbootstrap.js"></script>
+
+</body>
+</html>

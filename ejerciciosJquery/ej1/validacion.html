@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title> VALIDACION
+    </title>
+    <link rel="stylesheet" href="validacion.css">
+    <script type="text/javascript" src="../jquery/jquery.min.js" ></script>
+    <script type="text/javascript" src="validacion.js"></script>
+  </head>
+  <body>
+    <div id="container">
+      <form id="miFormulario">
+        <div>
+          <label for="nombre">*Nombre</label>
+          <input type="text" name="nombre" id="nombre" placeholder="Escribí algo" class="campo" required></input>
+          <div id="mensaje1" class="errores">Ingrese un nombre</div>
+        </div>
+        <div>
+          <label for="apellido">*Apellido</label>
+          <input type="text" name="apellido" id="apellido" placeholder="Escribí algo" class="campo"required></input>
+          <div id="mensaje2" class="errores">Ingrese un apellido</div>
+        </div>
+        
+        <div>
+          <label for="nacimiento">Fecha de Nacimiento</label>
+          <input type="date" id="nacimiento" class="campo" required>
+          <div id="mensaje3" class="errores">Ingrese fecha de nacimiento</div>
+        </div>
+        
+        <div>
+          <label for="mensaje">Observaciones</label>
+          <input type="textarea" name="mensaje" placeholder="Escribí algo" minlength="3" maxlength="100" class="campo"> </input>
+        </div>
+        
+        <div>
+          <select id="tipodocumento" name="tipodocumento" class="campo">
+            <option value="" disable="true" selected="true">Tipo de documento</option>
+            <option value="dni">DNI</option>
+            <option value="cedula">Cedula</option>
+            <option value="pasaporte">Pasaporte</option>
+            
+          </select></div>
+           <div id="mensaje5" class="errores">Seleccione tipo de documento</div>
+          <div>
+            <label for="documento">*Documento</label>
+            <input type="number" name="documento" id="documento" placeholder="Nro Documento" class="campo" required></input>
+            <div id="mensaje4" class="errores">Ingrese un nro de documento</div>
+          </div>
+          <div>
+            <input type="submit" id="enviar" value="enviar datos" class="boton campo">
+          </div>
+        </form>
+      </div>
+    </body>

@@ -57,7 +57,37 @@ function partition(arr, pivot, left, right){
  console.log(quickSort(array,0, array.length-1));    
 
 
+/* 
+var arr[8,3,10,2,5];
 
+tomar un pivote el del medio
+busco el pivote... 
+
+var p= length/2; redondeando para abajo o para arriba
+
+var p=2; indice del pivoe
+
+while ()
+if (arr[i]>arr[p]){
+
+  swap=arr[p];
+  arr[p]=arr[i];
+  arr[i]=swap;
+  
+} ordeno 
+
+
+
+
+
+
+
+
+
+
+
+
+*/
 
 
 
