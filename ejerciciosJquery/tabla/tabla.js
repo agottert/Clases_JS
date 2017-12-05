@@ -13,7 +13,7 @@ $(document).ready(function(){
       
         var tr= '<tr id="registro_'+i+'"><td> <input id="nombre'+i+'" class="registro'+i+'" value="'+datos[i][0] +'"type="text" disabled></input></td>'+
         '<td><input id="nombre'+i+'" class="registro'+i+'" value="'+datos[i][1] +'"type="text" disabled></input></td>'+
-        '<td><input id="nombre'+i+'" class="registro'+i+'" value="'+datos[i][2] +'"type="text" disabled></input></td>'+
+        '<td><input id="apellido'+i+'" class="registro'+i+'" value="'+datos[i][2] +'"type="text" disabled></input></td>'+
         '<td>'+'<button  data-rg="#registro_'+i+'"class="eliminar" name="boton">'+ '&#128686'+'</button>'+'</td>'+'<td>'+
         '<button id="_'+i+'" data-rg=".registro'+i+'" class="btnEditor">'+' &#9998'+'</button>'+'</td>'+'</tr>';
 

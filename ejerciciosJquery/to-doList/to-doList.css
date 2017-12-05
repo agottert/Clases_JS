@@ -1,7 +1,18 @@
 
 
-.lista{margin:0 auto;
+.lista{ text-align: center;
+	    
+	    border:dotted 2px grey;
+	    width: 400px;
+	    margin: 0 auto;
+	    padding-bottom: 20px;
+	    margin-top: 20px;
+
 }
 
 .rojo{color:red;}
 .borrar{margin-left: 20px;}
+.tachado{ text-decoration: line-through; }
+.destachado{
+	text-decoration: none;
+}

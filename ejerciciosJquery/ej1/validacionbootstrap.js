@@ -4,15 +4,18 @@ $(document).ready(inicio);
 function inicio(){
 	// $(".help-block").hide();
 
-	$("#btnvalidar").click(validar);
+	$("#btnvalidar").on("click",enviarDatos);
 }
-
+//var valido=true;
 function validar(){
-	var valido=true;
+	
+	var valido = true;
+
+	console.log(valido);
 
 	var valor= document.getElementById("texto").value;
 	
-	if (valor==null || valor.length==0 || /^\s+$/.test(valor)){
+	if (valor==null || valor.length==0 || !/^[a-zA-Z ]+$/.test(valor)){
 	    $("#texto").parent().addClass("has-error");
 	    $("#texto").parent().find(".help-block").text("Ingrese un nombre");
 	    $("#iconotexto").removeClass("glyphicon-ok");
@@ -26,6 +29,7 @@ function validar(){
 	}
 
 	var telefono= document.getElementById("numero").value;
+	
 	if(isNaN(telefono)){
 		$("#numero").parent().addClass("has-error");
 		$("#numero").parent().find(".help-block").text("Ingrese un telefono");
@@ -87,10 +91,31 @@ function validar(){
 		$("#iconomensaje").addClass("glyphicon-ok");
 	}
 
-
-
-
-
-	return valido;
+    
+    return valido;
 
 }
+
+
+ function enviarDatos(){
+ 	
+
+ 	if(validar() == true){
+
+    var jdatos={"nombre":$("#texto").val(),"telefono":$("#numero").val(),"Mail":$("#mail").val(),
+    "Localidad":$("#localidad").val(),"Asunto":$("#asunto").val(),"Mensaje":$("#mensaje").val()};
+    
+    var jdatosjson= JSON.stringify(jdatos);
+
+    console.log(jdatos);
+    console.log(jdatosjson);
+    
+    
+    } 
+    else{
+    	console.log("no esta validado");
+
+    }
+
+}    
+

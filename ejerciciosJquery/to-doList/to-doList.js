@@ -1,4 +1,4 @@
-$(document).ready(function(){
+/*$(document).ready(function(){
 
 
     $("#btn_agregar").on('click',function(){
@@ -14,13 +14,27 @@ $(document).ready(function(){
 
 	          	$('li').last().addClass('rojo');
 	         }
+
+          $('li').on('click',function(){
+          $(this).addClass('tachado');
+
+
+            });
+          $('li').on('click',function(){
+          $(this).toggleClass('destachado');
+
+
+            });    
+      
+
+
 	     }
 
         $('#check').prop('checked',false)
         $('.borrar').on('click',function(){
           $(this).parent().remove();//$(this).remove() me borra el boton, tengo .parent o para los hijos .children
        
-
+       
 
         });
      
@@ -30,38 +44,36 @@ $(document).ready(function(){
 
 });// prop('checked',false);
 
-/*
-    SIN FOR
+
+    SIN FOR*/
 
 $(document).ready(function(){
+  $("#btn_agregar").on('click',function(){
+    var texto=$('#lista').val();
+    console.log(texto)
+    var li= "<li>"+texto+"<button class='borrar' type='button'> X </button>"+"</li>";
+    $('#myUL').append(li);   
 
+    if ($('#check').is(':checked')){
+    	$('li').last().addClass('rojo');
+    }
 
-    $("#btn_agregar").on('click',function(){
-         var li= "<li>"+ array[i]+ "<button class='borrar' type='button'> X </button>"+"</li>";
-        
-         if ($('#check').is(':checked')){
+    $('#check').prop('checked',false);     
+    $('#lista').val("");
 
-	          	$('li').last().Class('rojo');
-	         }
-	    $('#myUL').append(li);   
-        $('.borrar').on('click',function(){
+    
+    
+  });// prop('checked',false);
 
-        	$(this).parent().remove();//$(this).remove() me
-
-
-        	//tengo .parent o para los hijos .children
+  $('#myUL').on('click', '.borrar', function(){
+    $(this).parent().remove();//$(this).remove() me
+    //tengo .parent o para los hijos .children
+  });
+  $('#myUL').last().on('click','li', function(){
+       $(this).toggleClass('tachado');
        
-
-
-        });
-     
-   
-
-
-
-});// prop('checked',false);
-*/
-
+    });
+});
 
 
 

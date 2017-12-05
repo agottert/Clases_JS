@@ -42,12 +42,14 @@ table{
 }
 
 .btnagregar{
-	margin-top:10px;
-	margin-left:150px;
-	margin:0 auto;
+	margin-top:20px;
+	
+
 }
 label{margin-left:10px;
       margin-right:10px;}
+
 .centrar{
-	margin-left:150px;
+	margin: 0 auto;
+	text-align: center;
 }
